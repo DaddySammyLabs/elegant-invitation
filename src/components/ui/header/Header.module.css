@@ -1,0 +1,192 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  width: 100%;
+  height: 85px;
+
+  background: rgba(248, 245, 240, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(181, 166, 148, 0.2);
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+
+  margin: 0 auto;
+  padding: 0 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  border: none;
+  background: none;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 35px;
+  font-weight: 400;
+  color: #454139;
+
+  cursor: pointer;
+}
+
+.logo span {
+  font-style: italic;
+  color: #a59a8d;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navLink {
+  border: none;
+  background: none;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #777166;
+
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #747b68;
+}
+
+.menuButton {
+  display: none;
+}
+
+.mobileNavigation {
+  display: none;
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+  .container {
+    padding: 0 25px;
+  }
+
+  .navigation {
+    gap: 15px;
+  }
+
+  .navLink {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    height: 70px;
+  }
+
+  .container {
+    padding: 0 22px;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .menuButton {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+  }
+
+  .menuButton span {
+    width: 25px;
+    height: 1px;
+
+    background: #454139;
+
+    transition: transform 0.3s ease;
+  }
+
+  .menuButton span:first-child.active {
+    transform: translateY(4px) rotate(45deg);
+  }
+
+  .menuButton span:last-child.active {
+    transform: translateY(-4px) rotate(-45deg);
+  }
+
+  .mobileNavigation {
+    position: absolute;
+    top: 70px;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    padding: 0;
+
+    background: #f8f5f0;
+
+    max-height: 0;
+    overflow: hidden;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+      max-height 0.4s ease,
+      opacity 0.3s ease,
+      padding 0.3s ease,
+      visibility 0.3s ease;
+  }
+
+  .mobileNavigationOpen {
+    max-height: 450px;
+    padding: 30px 20px;
+
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mobileLink {
+    border: none;
+    background: none;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 23px;
+    color: #454139;
+
+    cursor: pointer;
+  }
+}

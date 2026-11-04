@@ -1,0 +1,167 @@
+.dressCode {
+  width: 100%;
+  padding: 120px 20px;
+  background: #f8f5f0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: #a59a8d;
+
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(45px, 6vw, 70px);
+  font-weight: 400;
+  color: #454139;
+}
+
+.divider {
+  width: 50px;
+  height: 1px;
+  background: #b5a694;
+
+  margin: 30px auto;
+}
+
+.description {
+  max-width: 570px;
+  margin: 0 auto;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 23px;
+  line-height: 1.6;
+  color: #777166;
+}
+
+.palette {
+  margin: 65px 0;
+}
+
+.palette h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 29px;
+  font-weight: 400;
+  color: #454139;
+
+  margin-bottom: 30px;
+}
+
+.colors {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.colorItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.colorCircle {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.colorItem span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #81796e;
+}
+
+.outfits {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+
+  margin-top: 70px;
+  text-align: left;
+}
+
+.outfit img {
+  display: block;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.outfitInfo {
+  padding: 22px 5px;
+}
+
+.outfitInfo h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #454139;
+
+  margin-bottom: 8px;
+}
+
+.outfitInfo p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #81796e;
+}
+
+.note {
+  margin-top: 65px;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 23px;
+  font-style: italic;
+  color: #958778;
+}
+
+@media (max-width: 600px) {
+  .dressCode {
+    padding: 85px 20px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .colors {
+    gap: 20px;
+  }
+
+  .colorCircle {
+    width: 48px;
+    height: 48px;
+  }
+
+  .outfits {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 45px;
+  }
+
+  .outfit img {
+    height: 380px;
+  }
+
+  .outfitInfo h3 {
+    font-size: 27px;
+  }
+}

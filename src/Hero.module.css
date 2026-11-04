@@ -1,0 +1,37 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f5eee8;
+  padding: 40px 20px;
+}
+
+.content {
+  max-width: 800px;
+}
+
+.subtitle {
+  font-size: 18px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: Georgia, serif;
+  font-size: clamp(40px, 8vw, 80px);
+  font-weight: 400;
+  margin: 30px 0;
+}
+
+.date {
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.description {
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+}

@@ -1,0 +1,108 @@
+.invitation {
+  width: 100%;
+  padding: 130px 20px;
+  background: #f8f5f0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 750px;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  color: #a59a8d;
+
+  margin-bottom: 35px;
+}
+
+.decoration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  margin-bottom: 30px;
+}
+
+.decoration span:not(.heart) {
+  width: 45px;
+  height: 1px;
+  background: #c9bbaa;
+}
+
+.heart {
+  font-size: 25px;
+  color: #a59a8d;
+  font-family: serif;
+}
+
+.title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(45px, 6vw, 70px);
+  font-weight: 400;
+  color: #454139;
+
+  margin-bottom: 35px;
+}
+
+.text {
+  max-width: 570px;
+  margin: 0 auto 20px;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.7;
+
+  color: #777166;
+}
+
+.signature {
+  margin-top: 45px;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 19px;
+  font-style: italic;
+  color: #9a8e7f;
+}
+
+.signature span {
+  display: block;
+  margin-top: 10px;
+
+  font-size: 30px;
+  color: #454139;
+}
+
+@media (max-width: 600px) {
+  .invitation {
+    padding: 90px 25px;
+  }
+
+  .subtitle {
+    font-size: 8px;
+    letter-spacing: 2px;
+  }
+
+  .title {
+    margin-bottom: 25px;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .signature span {
+    font-size: 26px;
+  }
+}

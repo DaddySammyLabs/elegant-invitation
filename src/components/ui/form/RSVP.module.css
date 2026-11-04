@@ -1,0 +1,198 @@
+.rsvp {
+  width: 100%;
+  padding: 120px 20px;
+
+  display: flex;
+  justify-content: center;
+
+  background: #e9e0d5;
+}
+
+.content {
+  width: 100%;
+  max-width: 600px;
+}
+
+.subtitle {
+  text-align: center;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: #958778;
+
+  margin-bottom: 20px;
+}
+
+.title {
+  text-align: center;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(40px, 6vw, 60px);
+  font-weight: 400;
+  color: #454139;
+}
+
+.divider {
+  width: 50px;
+  height: 1px;
+  background: #b5a694;
+
+  margin: 30px auto;
+}
+
+.description {
+  max-width: 500px;
+  margin: 0 auto 45px;
+
+  text-align: center;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+  line-height: 1.6;
+  color: #777166;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.field > label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: #615b52;
+}
+
+.field input[type="text"],
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 15px;
+
+  background: #f8f5f0;
+  border: 1px solid #d6cabb;
+  border-radius: 0;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: #454139;
+
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: #747b68;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #aaa093;
+}
+
+.field textarea {
+  resize: vertical;
+}
+
+.radioGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.radioOption {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: #777166;
+
+  cursor: pointer;
+}
+
+.radioOption input {
+  accent-color: #747b68;
+  width: 16px;
+  height: 16px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  width: 100%;
+  padding: 19px;
+
+  border: none;
+  background: #747b68;
+  color: #fff;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  letter-spacing: 3px;
+
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #5c6352;
+}
+
+.button span {
+  font-size: 16px;
+}
+
+.success {
+  padding: 55px 20px;
+  text-align: center;
+  background: #f8f5f0;
+}
+
+.success span {
+  font-size: 40px;
+  color: #747b68;
+}
+
+.success h3 {
+  margin: 20px 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 35px;
+  font-weight: 400;
+  color: #454139;
+}
+
+.success p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 21px;
+  color: #777166;
+}
+
+@media (max-width: 600px) {
+  .rsvp {
+    padding: 90px 20px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .form {
+    gap: 24px;
+  }
+}
